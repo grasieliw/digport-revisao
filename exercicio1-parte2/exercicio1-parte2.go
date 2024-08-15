@@ -6,7 +6,6 @@ import "fmt"
 
 var NumeroTaboada int
 var Incrementa int
-var Resultado int
 
 func main() {
 
@@ -16,7 +15,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		ResultadoDisplay := taboada(NumeroTaboada, Incrementa)
 
-		fmt.Printf("%d X %d = %d", Incrementa, NumeroTaboada, ResultadoDisplay)
+		fmt.Printf("%d X %d = %d\n", Incrementa, NumeroTaboada, ResultadoDisplay)
 
 		Incrementa++
 	}
@@ -24,7 +23,7 @@ func main() {
 
 func taboada(NumeroInteiro, ValorIncrementa int) int {
 
-	Resultado = Incrementa * NumeroInteiro //1*4
+	Resultado := ValorIncrementa * NumeroInteiro //1*4
 
 	return Resultado
 }
